@@ -6,6 +6,12 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- external css -->
+  <link rel="stylesheet" href="design.css">
+  <!-- cdn for flowbite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
   <!-- Icon cdn from ion icons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -99,7 +105,10 @@
 
 
 <!-- all content -->
-<div class="bg-emerald-50 flex">
+<div class="bg-emerald-50 flex ">
+
+
+
 <!-- side bar -->
 <div class="w-1/5 mx-3">
   <h1 class="font-bold">Filter</h1>
@@ -111,35 +120,128 @@
   </div>
  
 
+
+     <!-- component of side bar -->
   <div>
-    <h1 class="font-bold">Employment Type</h1>
-    <div class="space-y-3 mt-3">
-      <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> All</p>
-      <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> Full Time Vacancies</p>
+    <table>
+      <tr id="dropbuttonsecond">
+        <td>
+          <h1 class="font-bold" >Employment Type</h1>
+        </td>
+        <td class="ps-20">
+          <span ><ion-icon name="chevron-down-outline"></ion-icon></span>
+        </td>
+      </tr>
+    </table>
+
+     <!-- dropdown content -->
+    <div class="space-y-3 mt-3" id="dropcontentsecond">
+     <table>
+        <tr>
+          <td> <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> All</p></td>
+          <td class="ps-14">23</td>
+        </tr>
+        
+        <tr>
+          <td>
       <p> <span><ion-icon name="square-outline"></ion-icon></span> Part Time Vacancies</p>
-      <p> <span><ion-icon name="square-outline"></ion-icon></span> Remote Vacancies</p>
-      <p> <span><ion-icon name="square-outline"></ion-icon></span> Contact</p>
-      <p> <span><ion-icon name="square-outline"></ion-icon></span> Training Vacancies</p>
+          </td>
+          <td class="ps-14">23</td>
+        </tr>
+
+        <tr>
+          <td> <p> <span><ion-icon name="square-outline"></ion-icon></span> Remote Vacancies</p> </td>
+          <td class="ps-14">23</td>
+        </tr>
+
+        <tr>
+          <td>  <p> <span><ion-icon name="square-outline"></ion-icon></span> Contact</p> </td>
+          <td class="ps-14">23</td>
+        </tr>
+
+        <tr>
+          <td><p> <span><ion-icon name="square-outline"></ion-icon></span> Training Vacancies</p></td>
+          <td class="ps-14">23</td>
+        </tr>
+
+     
+
+
+     
+      </table>
     </div>
 
   </div>
   
+  
+  <!-- second component of side bar -->
   <div>
-    <h1 class="font-bold">Post Status</h1>
-    <div class="space-y-3 mt-3">
-      <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> All  </p>
-      <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> Published Internally  </p>
-      <p> <span><ion-icon name="square-outline"></ion-icon></span>  Published Externally  </p>
-      <p> <span><ion-icon name="square-outline"></ion-icon></span>  Published Everywhere  </p>
-      <p> <span><ion-icon name="square-outline"></ion-icon></span>  UnPublished  </p>
-      <p> <span><ion-icon name="square-outline"></ion-icon></span>  Under Creation  </p>
+    <table>
+      <tr id="dropbutton">
+        <td><h1 class="font-bold">Post Status</h1></td>
+        <td class="ps-32"> <span ><ion-icon name="chevron-down-outline"></ion-icon></span>  </td>
+      </tr>
+    </table>
+    
+    <!-- dropdown content -->
+    <div class="space-y-3 mt-3" id="dropcontent">
+<table>
+<tr>
+  <td>
+    <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> All  </p>
+  </td>
+  <td class="ps-12">23</td>
+</tr>
+
+<tr>
+  <td>
+    <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> Published Internally  </p>
+  </td>
+  <td class="ps-12">23</td>
+</tr>
+
+<tr>
+<td>
+  <p> <span><ion-icon name="square-outline"></ion-icon></span>  Published Externally  </p>
+</td>
+<td class="ps-12">23</td>
+</tr>
+
+<tr>
+  <td>
+    <p> <span><ion-icon name="square-outline"></ion-icon></span>  Published Everywhere  </p>
+  </td>
+  <td class="ps-12">23</td>
+</tr>
+
+<tr>
+  <td>
+    <p> <span><ion-icon name="square-outline"></ion-icon></span>  UnPublished  </p>
+  </td>
+  <td class="ps-12">23</td>
+</tr>
+
+<tr>
+  <td>
+    <p> <span><ion-icon name="square-outline"></ion-icon></span>  Under Creation  </p>
+  </td>
+  <td class="ps-12">23</td>
+</tr>
+
+</table>
+
+
     </div>
 
   </div>
   
   
+
+
   </div>
 <!-- end of side bar -->
+
+
 <div class="w-11/12">
 
 <div class="p-3 flex flex-wrap sm:no-flex-wrap space-x-32 p-4 ">
@@ -181,10 +283,33 @@
       <div class="">
         <h1>Post Status</h1>
         <h1 class="text-emerald-500" >Published Internally</h1>
-        <!-- button -->
-        <div class="float-end mr-2 ">
-          <button class="text-2xl border rounded-md p-2">...</button>
-        </div>
+       
+           <!-- button -->
+           <div class="float-end mr-2" >
+         
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-2xl border rounded-md p-2  focus:outline-none  font-medium rounded-lg text-center items-center" type="button">...
+            </button>
+            
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-50 rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                  <li class="p-3">
+                    <a href="#" class="block px-4 py-2"> <span><ion-icon name="pencil-outline"></ion-icon></span> Edit Post</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2  font-medium">Published Internally</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2  font-medium">Published Externally</a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#" class="block px-4 py-2 text-emerald-500   "> <span><ion-icon name="ban-outline"></ion-icon></span> UnPublished</a>
+                  </li>
+                </ul>
+            </div>
+  
+          </div>
+          <!-- end of button -->
 
       </div>
   
@@ -280,42 +405,12 @@
       <div class="">
         <h1>Post Status</h1>
         <h1 class="text-emerald-500" >Published Internally</h1>
-        <!-- button -->
-        <div class="float-end mr-2 ">
-          <button class="text-2xl border rounded-md p-2">...</button>
-        </div>
-      </div>
-  
+
+     <!-- button -->
+     <div class="float-end mr-2 ">
+      <button class="text-2xl border rounded-md p-2">...</button>
     </div>
-  </div>
-  <div class=" p-3 bg-white rounded-lg mt-3 mb-3">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 ">
-      <div class="flex">
-        
-        <div class="custimg">
-          <img src="image/square.jpg" alt="" class="rounded-xl">
-        </div>
-        <div class="ms-4">
-          <p>3340DDF323</p>
-          <h1 class="text-2xl font-bold">Backend Developer</h1>
-          <p>From : <span class="text-emerald-500">Web Developers</span> </p>
-        </div>
-      </div>
-      <div class="">
-        <h1>Vacancy Owner</h1>
-        <p class="text-emerald-500"> <span><ion-icon name="person-circle-outline"></ion-icon></span> Noel </p>
-      </div>
-      <div class="">
-        <h1> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
-        <h1 class="font-bold ms-14">Full Time</h1>
-      </div>
-      <div class="">
-        <h1>Post Status</h1>
-        <h1 class="text-emerald-500" >Published Internally</h1>
-        <!-- button -->
-        <div class=" ">
-          <button class="float-end mr-2 text-2xl border rounded-md p-2">...</button>
-        </div>
+
       </div>
   
     </div>
@@ -336,13 +431,13 @@
         </svg>
       </a>
       <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
-      <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
-      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
-      <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
-      <span class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">4</span>
-      <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">5</a>
-      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">...</a>
-      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">19</a>
+      <a href="#" aria-current="page" class="relative  inline-flex items-center text-gray-400 px-4 py-2 text-sm font-semibold  ">1</a>
+      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-400 ">2</a>
+      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-md bg-emerald-500 ">3</a>
+      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-400  ">4</a>
+      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-400 ">5</a>
+      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-400 ">...</a>
+      <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-400 ">19</a>
       <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
         <span class="sr-only">Next</span>
         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -409,5 +504,8 @@
 
 </div>
 </div>
+
+<!-- dropdown in js -->
+<script src="dropdown.js"></script>
 </body>
 </html>
