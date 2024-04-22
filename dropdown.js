@@ -1,18 +1,10 @@
 
-// dropbutton
-// dropcontent
+let dropbtn = document.getElementById('dropbtn');
+ dropbtn.addEventListener('click',()=>{
+    document.getElementById("dropbtncomponent").classList.toggle("show");
+ })
 
-let dropbutton=document.getElementById("dropbutton");
-dropbutton.addEventListener('click',()=>{
-    document.getElementById('dropcontent').classList.toggle('show');
-})
-
-let dropbuttonsecond=document.getElementById("dropbuttonsecond");
-dropbuttonsecond.addEventListener('click',()=>{
-    document.getElementById('dropcontentsecond').classList.toggle('show');
-})
-
-let buttondot=document.getElementById('buttondot');
-buttondot.addEventListener('click',()=>{
-    document.getElementById('dotcontent').classList.toggle('show');
-})
+ let dropbtn2 = document.getElementById('dropbtn2');
+ dropbtn2.addEventListener('click',()=>{
+    document.getElementById("dropbtncomponent2").classList.toggle("show");
+ })
