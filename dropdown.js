@@ -9,11 +9,15 @@ let dropbtn = document.getElementById('dropbtn');
     document.getElementById("dropbtncomponent2").classList.toggle("show");
  })
 
- let myProgressBar = new CircularProgressBar(360, 360, 'my-container', {
-    strokeSize: 30,
-    backgroundColor: 'rgba(0,0,0,.35)',
-    strokeColor: '#ff3333',
-    showProgressNumber: false,
-    centerIcon: 'img/done_icon_yellow.svg',
-    oncomplete: () => console.log('Task completed!')
-});
+
+
+module.exports = {
+   theme: {
+     extend: {
+       fontFamily: {
+         roboto: ['Roboto', 'sans-serif'],
+         // Add more custom font families here as needed
+       }
+     }
+   }
+ }

@@ -21,7 +21,7 @@
 }
 </style>
 </head>
-<body>
+<body class="">
   <div class="container-fluid">
 <nav class="bg-emerald-500 ">
     <div class="flex h-16 relative items-center justify-between">
@@ -50,23 +50,23 @@
     </div>
 </nav>
 <!--  -->
-<div class="h-auto shadow-md ">
+<div class=" ">
   <div id="example"></div>
 
 
   <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 mt-3">
       <div class="ms-5">
   <div class="">
-      <h1 class="text-sm"> <span><ion-icon name="chevron-back-outline"></ion-icon></span> Back to vacancies</h1>
+      <h1 class="text-sm font-semibold text-gray-400"> <span><ion-icon name="chevron-back-outline"></ion-icon></span> Back to vacancies</h1>
       <h1 class="text-2xl font-bold">Backend Developer</h1>
-      <h1 class="text-sm">Created in 12 March 2020 by <span class="text-emerald-500">Noel Imanishimwe</span></h1>
+      <h1 class="text-sm text-gray-400 font-semibold">Created in 12 March 2020 by <span class="text-emerald-500">Noel Imanishimwe</span></h1>
       
   </div>
   </div>
   
   <div class="ms-32 sm:ml-20">
       <div>
-          <h1>Departement</h1>
+          <h1 class="font-semibold text-gray-400">Departement</h1>
           <h1 class="bg-emerald-50 w-28 p-1 rounded-md font-bold"> <span class="text-cyan-400"><ion-icon name="radio-button-on-outline"></ion-icon></span> Marketing</h1>
       </div>
   </div>
@@ -76,13 +76,13 @@
          
   
           <div class="ms-16">
-              <h1>Vacancies Status</h1>
-              <h1 class="text-emerald-500"> <span><ion-icon name="chevron-down-circle-outline"></ion-icon></span> Opened</h1>
+              <h1 class="font-semibold text-gray-400">Vacancies Status</h1>
+              <h1 class="text-emerald-500"> <span><ion-icon name="chevron-down-circle"></ion-icon></span> Opened</h1>
           </div>
   
           <div>
-              <h1>Departement</h1>
-              <h1> <span class="tetx-xl font-bold">4</span>/10 hired</h1>
+              <h1 >Departement</h1>
+              <h1 class="text-gray-400 font-semibold"> <span class="tetx-xl text-black">4</span>/10 hired</h1>
           </div>
           <!-- button -->
           <div class="ms-4">
@@ -91,14 +91,18 @@
           
   
       </div>
+ 
+
       <nav class="">
-        <div class="ms-20 space-x-7">
-          <a class=" hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Overview</a>
-          <a class=" hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Post</a>
-          <a class=" hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Status</a>
-          <a class=" hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Applicants</a>
+        <div class="ms-20 space-x-7 mt-2">
+          <a class=" text-gray-400 font-semibold hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Overview</a>
+          <a class=" text-gray-400 font-semibold hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Post</a>
+          <a class=" text-gray-400 font-semibold hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Status</a>
+          <a class=" text-gray-400 font-semibold hover:text-emerald-500 hover:border-b-4 hover:border-b-emerald-500" href="">Applicants</a>
         </div>
       </nav>
+   
+
 </div>
 
 
@@ -106,7 +110,7 @@
 <!-- all content -->
 <div class="bg-slate-100 flex">
 <!-- side bar -->
-<div class="w-1/5 mx-3">
+<div class="w-1/5 mx-5 mt-4">
   <h1 class="font-bold">Filter</h1>
 
   <div class="m-3">
@@ -129,7 +133,7 @@
     </table>
    
     <div class="space-y-3 mt-3" id="dropbtncomponent">
-      <table>
+      <table class="text-gray-500 ">
         <tr>
           <td>
             <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> All</p>
@@ -183,7 +187,7 @@
     </table>
     
     <div class="space-y-3 mt-3" id="dropbtncomponent2">
-      <table>
+      <table class="text-gray-500 ">
         <tr>
           <td>
             <p> <span class="text-emerald-500 "><ion-icon name="checkbox"></ion-icon></span> All  </p>
@@ -236,10 +240,10 @@
 <div class="w-11/12">
 
 <div class="p-3 flex flex-wrap sm:no-flex-wrap space-x-32 p-4 ">
-<h1> <span class="font-bold">Post</span> Showing 121 Available Post</h1>
+<h1 class="text-gray-400 font-semibold"> <span class="text-black">Post</span> Showing 121 Available Post</h1>
 
 <div class="float-right mt-[-5]">
-<h1>Sort by : <span class="font-bold">Last Added</span> </h1>
+<h1 class="text-gray-400 font-semibold font-roboto">Sort by : <span class="text-black">Last Added <ion-icon name="caret-down"></ion-icon></span> </h1>
 
 </div>
 <div>
@@ -250,7 +254,7 @@
 
   <div class="grid grid-cols-1 gap-4 rounded mx-2  ">
   
-  <div class=" p-3 bg-white rounded-lg">
+  <div class=" p-3 bg-white rounded-lg shadow">
     <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 ">
       <div class="flex">
         
@@ -258,22 +262,22 @@
           <img src="image/zamato.png" alt="Logo" class="rounded-xl">
         </div>
         <div class="ms-4">
-          <p>3340DDF323</p>
-          <h1 class="text-2xl font-bold">Backend Developer</h1>
-          <p>From : <span class="text-emerald-500">Web Developers</span> </p>
+          <p class="font-semibold text-gray-400">3340DDF323</p>
+          <h1 class="text-md font-bold">Backend Developer</h1>
+          <p class="font-medium"> <span class="text-gray-400">From</span>  : <span class="text-emerald-500">Web Developers</span> </p>
         </div>
       </div>
       <div class="">
-        <h1>Vacancy Owner</h1>
-        <p class="text-emerald-500"> <span><ion-icon name="person-circle-outline"></ion-icon></span> Noel </p>
+        <h1 class="font-semibold text-gray-400">Vacancy Owner</h1>
+        <p class="text-emerald-500 font-medium"> <span><ion-icon name="person-circle-outline"></ion-icon></span> Noel </p>
       </div>
       <div class="">
-        <h1> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
+        <h1> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full mt-3" > <ion-icon name="briefcase-outline"></ion-icon></span> <span class="font-semibold text-gray-400">Employment Type</span> </h1>
         <h1 class="font-bold ms-14">Full Time</h1>
       </div>
       <div class="">
-        <h1>Post Status</h1>
-        <h1 class="text-emerald-500" >Published Internally</h1>
+        <h1 class="font-semibold text-gray-400">Post Status</h1>
+        <h1 class="font-medium text-emerald-500" >Published Internally</h1>
 
          <!-- button -->
         <div class="float-end mr-3"> 
@@ -287,7 +291,7 @@
         <div id="dropdown" class="z-10 bg-white rounded-md shadow w-44 shadow-md mr-2">
             <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
               <li class="p-3">
-                <a href="#" class="block cursor-pointer font-semibold px-4 py-2 hover:font-medium"> <span><ion-icon name="pencil-outline"></ion-icon></span> Edit Post</a>
+                <a href="#" class="text-gray-500 block cursor-pointer font-semibold px-4 py-2 hover:font-medium"> <span><ion-icon name="pencil-outline"></ion-icon></span> Edit Post</a>
               </li>
               <li>
                 <a href="#" class="block px-4 py-2 font-semibold hover:font-medium">Published Internally</a>
@@ -308,7 +312,7 @@
     </div>
   </div>
 
-  <div class=" p-3 bg-white rounded-lg ">
+  <div class=" p-3 bg-white rounded-lg shadow">
     <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 ">
       <div class="flex">
         
@@ -316,22 +320,22 @@
           <img src="" alt="" class="rounded-xl">
         </div>
         <div class="ms-4">
-          <p>3340DDF323</p>
-          <h1 class="text-2xl font-bold">Backend Developer</h1>
-          <p>From : <span class="text-emerald-500">Web Developers</span> </p>
+          <p class="text-gray-400 font-semibold">3340DDF323</p>
+          <h1 class="text-md font-bold">Backend Developer</h1>
+          <p class="font-semibold text-gray-400">From : <span class="text-emerald-500">Web Developers</span> </p>
         </div>
       </div>
       <div class="">
-        <h1>Vacancy Owner</h1>
-        <p class="font-bold text-2xl">No vacance owner </p>
+        <h1 class="text-gray-400 font-semibold">Vacancy Owner</h1>
+        <p class="font-bold text-md">No vacance owner </p>
       </div>
       <div class="">
-        <h1> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
+        <h1 class="text-gray-400 font-semibold"> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
         <h1 class="font-bold ms-14">Full Time</h1>
       </div>
       <div class="">
-        <h1>Post Status</h1>
-        <h1 class="text-emerald-500" >Published Internally</h1>
+        <h1 class="text-gray-400 font-semibold">Post Status</h1>
+        <h1 class="text-emerald-500 font-semibold" >Published Internally</h1>
         <!-- button -->
         <div class="float-end mr-2 ">
           <button class="text-2xl border rounded-md p-2">...</button>
@@ -342,7 +346,7 @@
     </div>
   </div>
 
-  <div class=" p-3 bg-white rounded-lg ">
+  <div class=" p-3 bg-white rounded-lg shadow">
     <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 ">
       <div class="flex">
         
@@ -350,22 +354,22 @@
           <img src="image/k.jpg" alt="" class="rounded-xl">
         </div>
         <div class="ms-4">
-          <p>3340DDF323</p>
-          <h1 class="text-2xl font-bold">Backend Developer</h1>
-          <p>From : <span class="text-emerald-500">Web Developers</span> </p>
+          <p class="text-gray-400 font-semibold">3340DDF323</p>
+          <h1 class="text-md font-bold">Backend Developer</h1>
+          <p class="text-gray-400 font-semibold">From : <span class="text-emerald-500">Web Developers</span> </p>
         </div>
       </div>
       <div class="">
-        <h1>Vacancy Owner</h1>
-        <p class="text-emerald-500"> <span><ion-icon name="person-circle-outline"></ion-icon></span> Noel </p>
+        <h1 class="text-gray-400 font-semibold">Vacancy Owner</h1>
+        <p class="text-emerald-500 font-semibold"> <span><ion-icon name="person-circle-outline"></ion-icon></span> Noel </p>
       </div>
       <div class="">
-        <h1> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
-        <h1 class="font-bold ms-14">Full Time</h1>
+        <h1 class="text-gray-400 font-semibold"> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
+        <h1 class="font-bold ms-14 ">Full Time</h1>
       </div>
       <div class="">
-        <h1>Post Status</h1>
-        <h1 class="text-emerald-500" >Published Internally</h1>
+        <h1 class="text-gray-400 font-semibold">Post Status</h1>
+        <h1 class="text-emerald-500 font-semibold" >Published Internally</h1>
         <!-- button -->
         <div class="float-end mr-2 ">
           <button class="text-2xl border rounded-md p-2">...</button>
@@ -374,7 +378,7 @@
   
     </div>
   </div>
-  <div class=" p-3 bg-white rounded-lg ">
+  <div class=" p-3 bg-white rounded-lg shadow">
     <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 ">
       <div class="flex">
         
@@ -382,22 +386,22 @@
           <img src="image/square.jpg" alt="" class="rounded-xl">
         </div>
         <div class="ms-4">
-          <p>3340DDF323</p>
-          <h1 class="text-2xl font-bold">Backend Developer</h1>
-          <p>From : <span class="text-emerald-500">Web Developers</span> </p>
+          <p class="text-gray-400 font-semibold">3340DDF323</p>
+          <h1 class="text-md font-bold">Backend Developer</h1>
+          <p class="text-gray-400 font-semibold">From : <span class="text-emerald-500">Web Developers</span> </p>
         </div>
       </div>
       <div class="">
-        <h1>Vacancy Owner</h1>
-        <p class="text-emerald-500"> <span><ion-icon name="person-circle-outline"></ion-icon></span> Noel </p>
+        <h1 class="text-gray-400 font-semibold">Vacancy Owner</h1>
+        <p class="text-emerald-500 font-semibold"> <span><ion-icon name="person-circle-outline"></ion-icon></span> Noel </p>
       </div>
       <div class="">
-        <h1> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
+        <h1 class="text-gray-400 font-semibold"> <span class="text-emerald-500 text-3xl bg-emerald-50 py-2  px-3 rounded-full " > <ion-icon name="briefcase-outline"></ion-icon></span> Employment Type</h1>
         <h1 class="font-bold ms-14">Full Time</h1>
       </div>
       <div class="">
-        <h1>Post Status</h1>
-        <h1 class="text-emerald-500" >Published Internally</h1>
+        <h1 class="text-gray-400 font-semibold">Post Status</h1>
+        <h1 class="text-emerald-500 font-semibold" >Published Internally</h1>
 
      <!-- button -->
      <div class="float-end mr-2 ">
